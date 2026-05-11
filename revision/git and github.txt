@@ -1,0 +1,410 @@
+✅ Git / GitHub Interview Questions List for React Developer
+
+================================================================
+
+1.What is Git?
+
+Git is a distributed version control system used to track changes in source code during software development.
+It helps developers save project history, manage different versions, and work safely without losing previous code.
+Git also makes team collaboration easier because multiple developers can work on the same project.
+It is one of the most commonly used tools in software development.
+
+2.What is GitHub?
+
+GitHub is a cloud-based code hosting and collaboration platform built around Git.
+It allows developers to store their Git repositories online, manage code versions, and work together with team members from anywhere.
+Developers can push code, pull code, create branches, review changes, and share projects easily on GitHub.
+It is one of the world’s largest software collaboration platforms used by more than 150 million developers.
+
+3.What is the difference between Git and GitHub?
+
+Git is a version control tool used locally on a developer’s computer to track code changes and manage project history.
+GitHub is an online cloud platform used to store Git repositories remotely and collaborate with other developers.
+Git works offline on the local machine, while GitHub works online for backup and teamwork.
+In simple words, Git manages the code and GitHub hosts that managed code on the internet.
+
+4.What is a Git Repository?
+
+A Git Repository is a project folder that is managed and tracked by Git.
+It stores all the project files along with complete version history, commits, branches, and code changes.
+Git continuously monitors this repository and records every update made by the developer.
+This helps in restoring old versions and managing teamwork easily.
+So a Git Repository is the main storage unit of a Git project.
+
+5.What is version control system?
+
+A Version Control System is a software tool used to track and manage changes made in source code over time.
+It stores different versions of the project so developers can see what was changed, when it was changed, and who changed it.
+It also helps restore previous code if any mistake happens.
+Version control is very useful in team collaboration and safe development.
+Git is the most popular Version Control System.
+
+6.Why do we use Git in projects?
+
+We use Git in projects to track every code change and maintain the complete development history.
+It helps developers save different versions of the project, so mistakes can be fixed by restoring older code.
+Git also makes team collaboration easier because multiple developers can work on the same project safely.
+Branching and merging features help manage new features without affecting the main code.
+Therefore, Git is used for safe, organized, and collaborative development.
+
+7.What is git init?
+
+git init is a Git command used to initialize a normal project folder as a new Git repository.
+When we run this command, Git starts tracking all changes inside that folder.
+It also creates a hidden .git directory which stores commit history, branches, and Git configuration.
+This is the first step to start using Git in any project.
+So git init converts a simple folder into a Git-managed repository.
+
+commond -: git init
+
+8.What is git clone?
+
+git clone is a Git command used to copy an existing remote repository from GitHub to the local computer.
+It downloads all project files, commit history, branches, and Git configuration into a new local folder.
+This command is commonly used when we want to work on an already created team project.
+Instead of creating the project manually, we clone it directly.
+So git clone creates a full local copy of a remote repository.
+
+commond  -:git clone https://github.com/user/react-app.git
+
+9.What is git status?
+
+git status is a Git command used to check the current state of the working directory and staging area.
+It shows which files are modified, which files are staged, and which files are still untracked by Git.
+This command helps developers understand what changes are pending before committing.
+It is one of the most frequently used Git commands during development.
+So git status gives the present condition of the repository.
+
+commond  -:git status
+
+10.What is git add?
+
+git add is a Git command used to move changed or new files from the working directory to the staging area.
+Git does not directly commit every modified file, so we first select which files should be included in the next commit.
+The git add command prepares those files for commit.
+In simple words, it tells Git that these files are ready to be saved in version history.
+So git add is the staging command in Git.
+
+commond  -:git add .
+
+
+11.What is staging area in Git?
+
+The Staging Area is an intermediate place in Git where changed files are kept temporarily before making a commit.
+After modifying files, we use git add to send them to the staging area.
+Only the files present in the staging area will be included in the next commit.
+This gives developers control over which changes should be saved in version history.
+So staging area works like a waiting zone before commit.
+
+command -:git add App.jsx
+
+12.What is git commit?
+
+git commit is a Git command used to permanently save the staged changes into Git version history.
+After files are moved to the staging area, git commit creates a snapshot of those files.
+This snapshot becomes a saved version of the project that can be revisited later.
+Each commit is usually written with a meaningful message to describe the changes.
+So git commit records a new version in the repository history.
+
+COMMOND ;- git commit -m "added login page"
+
+13.Why do we write commit messages?
+
+We write commit messages to clearly describe what changes were saved in that particular commit.
+Since a project contains many commits over time, commit messages help developers understand the purpose of each saved version.
+They make it easier to track history, review updates, and identify mistakes later.
+Meaningful commit messages are also very helpful in team collaboration.
+So commit messages act like notes for every code snapshot.
+
+14.What is git push?
+
+git push is a Git command used to upload local committed changes from the computer to the remote GitHub repository.
+After we save code locally using git commit, those changes still remain only on our machine.
+git push sends that updated commit history to GitHub so it becomes available online.
+This helps in backup, sharing code, and team collaboration.
+So git push transfers local code to the remote repository.
+
+git push origin main
+
+15.What is git pull?
+
+git pull is a Git command used to download the latest updated code from the remote GitHub repository to the local machine.
+When other developers push new changes to GitHub, our local project does not get those changes automatically.
+By using git pull, we fetch and merge the latest remote updates into our local repository.
+This keeps our local code synchronized with the team’s latest work.
+So git pull brings remote changes to the local system.
+
+git pull origin main
+
+16.What is git fetch?
+
+git fetch is a Git command used to download the latest changes from the remote repository without merging them 
+into the local code immediately.
+It only brings the updated commit history and branch information from GitHub.
+After fetching, the developer can review those changes first and then decide when to merge.
+So git fetch is considered a safer way to check remote updates.
+It updates information but does not directly change the working files.
+
+git fetch origin
+
+17.What is git remote add origin?
+
+git remote add origin ek Git command hai jo local Git repository ko GitHub ki remote repository se connect karti hai.
+Jab hum project local machine par banate hain tab Git sirf local folder ko janta hai.
+Is command me hum GitHub repository ka URL dete hain aur origin naam se remote connection bana dete hain.
+Iske baad hum code ko push aur pull kar sakte hain.
+Simple words me, ye local project ko GitHub se jodta hai.
+
+git remote add origin https://github.com/user/my-react-app.git
+
+18.What is git branch?
+
+A Git branch is a separate line of development inside the same repository.
+It allows developers to work on new features, bug fixes, or experiments without affecting the main project code.
+Each branch has its own independent code changes.
+After the work is completed, the branch can be merged back into the main branch.
+So branching provides safe parallel development.
+
+git branch payment-feature
+
+19.Why do we create branches in Git?
+
+We create branches in Git to work on new features, bug fixes, or experiments without changing the stable main code directly.
+Branches provide an isolated environment where developers can write and test code safely.
+If something goes wrong, the main branch remains unaffected.
+After the work is successfully completed, the branch can be merged into the main branch.
+So branches help in safe and organized parallel development.
+
+20.What is git checkout?
+
+git checkout is a Git command used to switch from one branch to another branch or restore a specific commit/file.
+Its most common use is changing the current working branch.
+When we checkout a branch, Git loads that branch’s code into the working directory.
+This allows developers to move between different development lines easily.
+So git checkout is mainly used for branch switching.
+
+git checkout login-feature
+
+21.What is git switch?
+
+git switch is a modern Git command used to switch between branches.
+It is a simpler and more focused alternative to git checkout when only changing branches.
+Unlike git checkout, it does not handle files or commits, which makes it less confusing.
+It improves readability and reduces mistakes in commands.
+So git switch is used only for branch switching.
+
+git switch login-feature
+
+22.What is git merge?
+
+git merge is a Git command used to combine the changes of one branch into another branch.
+After completing work on a feature branch, developers merge that branch into the main branch.
+Git takes the commits from the selected branch and adds them to the current branch.
+This helps integrate new features or bug fixes into the main project code.
+So git merge is the branch combining command.
+
+git switch main
+git merge login-feature
+
+23.What is merge conflict in Git?
+
+A Merge Conflict happens when Git is unable to automatically merge two branches because the same
+ part of the same file was changed differently in both branches.
+Git gets confused about which version should be kept.
+In this situation, the developer must manually review the conflicting code and choose the correct final version.
+After resolving it, the merge process can continue normally.
+So merge conflict is a code collision during branch merging.
+
+24.How do you resolve merge conflicts?
+
+To resolve a merge conflict, we first open the conflicted file and manually check the conflicting code sections marked by Git.
+Then we decide which code should be kept or we combine both changes properly.
+After fixing the file, we save it, run git add, and then complete the merge with a commit.
+This manual correction tells Git that the conflict has been resolved.
+So merge conflicts are resolved by reviewing and fixing code manually.
+
+
+25.What is .gitignore file?
+
+.gitignore is a special file in Git used to tell Git which files or folders should not be tracked or committed.
+Sometimes a project contains unnecessary, secret, or heavy files that should not go into the repository.
+We write those file names inside .gitignore, and Git ignores them during git add and git commit.
+This keeps the repository clean and secure.
+So .gitignore controls ignored files in a Git project.
+
+26.Why is .gitignore important in React projects?
+
+.gitignore is very important in React projects because React applications contain some folders and files
+that should not be uploaded to GitHub.
+For example, node_modules is a very large dependency folder and .env contains secret environment variables.
+If we commit these files, the repository becomes heavy and may expose sensitive information.
+By adding them to .gitignore, Git skips tracking them.
+So .gitignore keeps React repositories clean, lightweight, and secure.
+
+27.What files are usually added in .gitignore?
+
+Usually we add files and folders in .gitignore that are unnecessary, auto-generated, system-specific, or sensitive.
+In React projects, the most common ignored folder is node_modules because it contains installed dependencies and is very large.
+We also ignore .env because it stores secret API keys and environment variables.
+Build folders like dist or build, log files, and temporary system files are also commonly ignored.
+So .gitignore generally contains heavy, private, and generated files.
+
+28.What is README.md file?
+
+README.md is a documentation file placed inside a project repository to explain important details about the project.
+It usually contains the project name, description, features, installation steps, usage instructions, and other helpful information.
+When someone opens the repository on GitHub, the README file is the first thing they see.
+It helps developers and users understand the project quickly.
+So README.md acts as the project guide or introduction file.
+
+29.What is git log?
+
+git log is a Git command used to view the complete commit history of the repository.
+It shows all previous commits along with commit ID, author name, date, and commit message.
+This helps developers track what changes were made over time and by whom.
+It is very useful for debugging, reviewing project progress, and understanding version history.
+So git log displays the repository’s saved commit timeline.
+
+git log
+
+30.What is git diff?
+
+git diff is a Git command used to see the exact line-by-line differences between the current 
+code and the previous saved version.
+It shows what content was added, removed, or modified in the files.
+This helps developers review their changes before staging or committing them.
+It is very useful for checking mistakes and understanding recent edits.
+So git diff displays the unsaved code changes in detail.
+
+31.What is git reset?
+
+git reset is a Git command used to undo changes by moving the current branch pointer back to a previous commit
+or by removing files from the staging area.
+It can unstage added files, discard commits, or restore the repository to an older state depending on how it is used.
+This command is mainly used when developers want to correct mistakes before or after commit.
+Because it can remove history, it should be used carefully.
+So git reset is an undo or rollback command in Git.
+
+git reset
+
+32.What is git revert?
+
+git revert is a Git command used to safely undo a previous commit by creating a new commit that reverses the old changes.
+Unlike git reset, it does not delete commit history.
+Instead, it keeps the history intact and adds one more commit to cancel the selected commit’s effect.
+This makes it safer in shared team repositories.
+So git revert is a history-safe undo command.
+
+33.What is the difference between git reset and git revert?
+
+Both git reset and git revert are used to undo changes, but they work differently.
+git reset moves the repository back to a previous state and can remove commit history, so it rewrites history.
+git revert, on the other hand, keeps the existing history safe and creates a new commit that cancels the selected old commit.
+Because of this, git reset is risky for shared repositories, while git revert is safer in team projects.
+So reset removes history, while revert preserves history.
+
+35.What is git stash?
+
+git stash is a Git command used to temporarily save uncommitted changes without making a commit.
+Sometimes developers are working on unfinished code but need to switch branches or pull new updates.
+Instead of committing incomplete work, they can stash those changes safely.
+Git removes the changes from the working directory and stores them temporarily.
+Later, the stashed changes can be restored when needed.
+
+36.What is git rm?
+
+git rm is a Git command used to remove a file from both the working directory and Git tracking.
+When we delete a file normally, Git may still show it as modified or deleted.
+Using git rm tells Git officially that this file should be removed and included in the next commit.
+So it deletes the file and stages that deletion at the same time.
+This is the proper Git way to remove tracked files.
+
+37.What is git mv?
+
+git mv is a Git command used to move or rename a file while keeping Git tracking information intact.
+Instead of deleting the old file and creating a new one manually, this command tells Git that the file has simply
+been moved or renamed.
+It also stages that change automatically for the next commit.
+This helps maintain clean file history.
+So git mv is used for tracked file rename or move operations.
+
+38.What is git tag?
+
+git tag is a Git command used to create a label or marker on a specific commit in the repository history.
+It helps developers identify important project versions such as releases, milestones, or production builds.
+Instead of remembering long commit IDs, we can give simple names like v1.0 or release-2026.
+Tags make version tracking easier and cleaner.
+So git tag is used for version marking in Git.
+
+git tag v1.0
+
+39.What is fork in GitHub?
+
+A Fork in GitHub means creating your own personal copy of someone else’s repository under your GitHub account.
+This copied repository remains connected to the original upstream repository, but your changes do not affect
+the original project directly.
+Forking is mainly used when we want to contribute to an open-source project or experiment with someone else’s code safely.
+After making changes in the forked repository, we can request the original owner to merge them through a pull request.
+So a fork is an independent GitHub copy of another developer’s repository.
+
+40.What is pull request (PR) in GitHub?
+
+A Pull Request, commonly called PR, is a GitHub feature used to request that your code changes be reviewed 
+and merged into another branch or repository.
+After completing work in a feature branch or fork, developers create a PR to show the exact changes they made.
+Team members can review the code, discuss it, suggest modifications, and then approve the merge.
+This makes collaboration safer and more organized.
+So a Pull Request is a formal merge request for code review. 
+
+41.What is the difference between pull request and merge?
+
+A Pull Request is a request created on GitHub to ask other developers to review and approve code changes 
+before combining them.
+It is mainly a discussion and review step.
+Merge is the actual process of combining one branch’s code into another branch after approval.
+So Pull Request happens before the merge, while merge is the final code integration step.
+In simple words, PR asks for permission, merge performs the combination.
+
+42.How do teams collaborate using GitHub?
+
+Teams collaborate on GitHub by storing the project in a shared remote repository where all developers can access the code.
+Each developer usually creates separate branches for their features or bug fixes and pushes their work to GitHub.
+Then they create Pull Requests so other team members can review the code, suggest changes, and approve it.
+After approval, the code is merged into the main branch.
+This workflow keeps teamwork organized, safe, and version controlled.
+
+43.How do you upload a React project to GitHub?
+
+To upload a React project to GitHub, first we initialize the project folder as a Git repository using git init.
+Then we add all files with git add . and save them using git commit.
+After creating a new empty repository on GitHub, we connect the local project with git remote add origin.
+Finally, we upload the code online using git push origin main.
+This completes the React project upload process.
+
+44.How do you clone an existing project from GitHub?
+
+
+
+How do you update your local code with latest remote changes?
+
+
+How do you create a new branch and push it to GitHub?
+
+
+What is open source contribution on GitHub?
+
+
+Have you used GitHub for team collaboration?
+
+
+How do you track code history in Git?
+
+
+Explain the complete Git workflow from code writing to pushing on GitHub.
+
+
+
+✅ Ye 50 me se top asked almost sab cover ho jate.
+Ab tu bol:
+inme se top/top important 15 chhant du?
+taaki faltu na padhe 😄
